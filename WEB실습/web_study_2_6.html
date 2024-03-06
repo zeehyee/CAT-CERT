@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title> javascript </title>
+	</head>
+	<body>
+		<p align="center">
+			<input type="button" onclick="jstest()" value="클릭시 실행"/>
+		</p>
+	</body>
+</html>
+<script>
+	function jstest(){
+		var string = prompt("문자열을 입력하시오","초가 문자열을 정해줄 수 있다.");
+		alert("당신이 입력한 문자열은" + string + "입니다.");
+		
+		var a = 10;
+		var b = 20;
+		document.write("<b>자바스크립트</b>를 이용한 글쓰기. <br>");
+		document.write("a + b = " + (a+b));
+	}
+</script>

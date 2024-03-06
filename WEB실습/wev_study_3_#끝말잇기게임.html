@@ -1,0 +1,26 @@
+<html>
+	<head>	
+		<title> 끝말잇기 게임 </title>
+	</head>
+	<body>
+		<div class="word game">
+		<div class="exword">단어</div>
+		<div class="timebox">시간</div>
+		<div class="inputbox">
+		<input id="unput_word" type="text"/>
+		</div>
+		</div>
+		<script>
+			var words =["자동차", "음료수", "오렌지", "노트북","마스크"];
+			var index= Math.floor(Math.random()*5);
+			var word= words[index];
+			var count=5;
+			var exWord=document.querySelector(".exword");
+			var time=document.querySelector(".timebox");
+			var input = document.getElementById("input_word");
+			exWord,innerHTML=word;
+			time.innerHTML=count;
+		</script>
+	</body>
+</html>
+	

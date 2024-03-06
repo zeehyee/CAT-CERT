@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title> Javascript를 이용한 디지털 시계 만들기 </title>
+		<style>
+			div {
+			border:solid 20px #b2d7d5;
+			background-color: white;
+			width: 400px;
+			height:150px;
+			text-align:center;
+			font-size:30px;
+			font-style:bold;
+			margin: 0px 500px;
+			padding: 90px 0px;
+			}
+		</style>
+	</head>
+		<script>
+			function presentClock() {
+				let today = new Date();
+				
+				let hour=today.getHours();
+				let min=today.getMinutes();
+				let sec=today.getSeconds();
+				min = (min < 10) ? "0" + min : min;
+				sec = (sec < 10) ? "0" + sec : sec;
+				document.getElementById("clock").innerHTML =hour+':'+min+':'+sec+'<br/>'+
+					today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+			}
+			setInterval(presentClock,1000);
+		</script>
+	<body onload="presentClock()">
+		<div id="clock" text-align="center"; ></div>
+	</body>
+</html>

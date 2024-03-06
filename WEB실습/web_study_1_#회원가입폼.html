@@ -1,0 +1,54 @@
+<html>
+	<HEAD>
+		<title>회원가입양식 </title>
+	</head>
+		<body>
+			<h1> <div style="text-align:center"> [회원가입] </h1>
+			<table border="1" width="800px" height="400px" align="center" name="mytable">
+			<form method="post" action name="form">
+		<tr>
+		<td colspan="3"> 이용약관, 개인정보 수집 및 이용, </br> 프로모션 안내에 모두 동의합니다(필수)
+		<input type="checkbox" name="icheckbox" value="개인정보동의"> </td>
+		</tr>
+		<tr>
+		<td align="center"> * 회원 ID  </td><td colspan="2"><input type="text">[ID 중복 검사] </td>
+		</tr>
+		<tr>
+		<td align="center"> * 비밀번호  </td><td colspan="2"> <input type="text"></td> 
+		</tr>
+		<tr>
+		<td align="center"> * 비밀번호 확인 </td><td colspan="2"> <input ="ghftype="text"></td>
+		</tr>
+		<tr>
+		<td align="center"> * 이 름 </td><td colspan="2"> <input type="text"></td>
+		</tr>
+		<tr>
+		<td align="center"> * 성 별 </td><td colspan="2"> 남 성 <input type="radio" name="iradio" value="남">
+		여 성 <input type="radio" name="iradio" value="여"></td>
+		</tr>
+		<tr>
+		<td align="center"> * 휴대전화 </td><td colspan="2"> <select name="iselect"> 
+			<option value="010"> 010 </option>
+			<option value="011"> 011 </option>
+			</select> <input type="text"> </td>
+		</tr>
+		<tr>
+		<td align="center"> * 이메일 </td><td colspan="2"><input type="text"> @ <select name="iselect"> 
+			<option value="naver"> naver.com </option>
+			<option value="hanmail.net"> hanmail.net </option>
+			</select><input type="submit" name="중복확인" value="중복확인"></td>
+		</tr>
+		<td align="center"> * 주 소 </td><td colspan="2"> <input type="text" name="address" value="우편번호">
+		<input type="submit" name="우편번호 찾기" value="우편번호 찾기"></br>
+		<input type="text" name="address" value="도로명주소"> <input type="text" name="address" value="지번주소"></br>
+		<input type="text" name="address" value="나머지 주소"></td>
+		</tr>
+		<tr>
+		<td align="center"> 사진 첨부 </td><td colspan="2">
+			<input type="file" name="ifile" value="사진 불러오기"></td>
+		</tr>
+		</form>
+		</table>
+		<h4> <div style="text-align:center"> 환영합니다! <h4>
+		</body>
+</html>	
